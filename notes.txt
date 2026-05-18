@@ -1,0 +1,11 @@
+INSTALLATION — DO THIS FIRST
+1.  Install Java JDK 11+    →  https://adoptium.net
+2.  Download JMeter 5.6+    →  https://jmeter.apache.org/download_jmeter.cgi
+3.  Extract to a folder     →  e.g.  C:\JMeter   or   /opt/jmeter
+4.  Launch JMeter GUI       →  Windows: bin\jmeter.bat   |   Linux/Mac: ./bin/jmeter.sh
+5.  Confirm installation    →  Help menu → About Apache JMeter → must show version 5.6+
+
+
+
+
+jinjg

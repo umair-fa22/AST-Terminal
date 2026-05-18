@@ -1,5 +1,9 @@
 # Advance Software Testing
 
+- **Part A - Apache Jmeter**
+- **Part B - Cypress**
+- **Part C - DVWA**
+
 ## Course Information
 
 - **Student Name:** Umair Ali
