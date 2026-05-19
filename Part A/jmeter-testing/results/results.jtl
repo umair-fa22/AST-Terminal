@@ -1,0 +1,15 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1779223678632,770,GET /posts/${postId},200,OK,CSV DATA-DRIVEN (Task 1 Part C) 2-3,text,true,,1555,138,5,6,https://jsonplaceholder.typicode.com/posts/50,770,0,540
+1779223678332,1065,GET Request,200,OK,Thread Group (Task 1) 1-1,text,true,,1514,137,1,6,https://jsonplaceholder.typicode.com/posts/1,1064,0,848
+1779223678332,1065,GET /posts/${postId},200,OK,CSV DATA-DRIVEN (Task 1 Part C) 2-1,text,true,,1514,137,5,6,https://jsonplaceholder.typicode.com/posts/1,1064,0,839
+1779223678436,960,GET /posts/${postId},200,OK,CSV DATA-DRIVEN (Task 1 Part C) 2-2,text,true,,1450,138,5,6,https://jsonplaceholder.typicode.com/posts/10,959,0,738
+1779223678837,673,GET /posts/${postId},200,OK,CSV DATA-DRIVEN (Task 1 Part C) 2-4,text,true,,1463,139,5,6,https://jsonplaceholder.typicode.com/posts/100,672,0,453
+1779223679435,287,GET Extracted_id Request,200,OK,CSV DATA-DRIVEN (Task 1 Part C) 2-2,text,true,,2796,147,5,6,https://jsonplaceholder.typicode.com/posts/10/comments,286,0,0
+1779223679437,285,GET Extracted_id Request,200,OK,CSV DATA-DRIVEN (Task 1 Part C) 2-1,text,true,,2726,146,5,6,https://jsonplaceholder.typicode.com/posts/1/comments,284,0,0
+1779223679435,287,GET Extracted_id Request,200,OK,CSV DATA-DRIVEN (Task 1 Part C) 2-3,text,true,,2824,147,5,6,https://jsonplaceholder.typicode.com/posts/50/comments,286,0,0
+1779223679511,213,GET Extracted_id Request,200,OK,CSV DATA-DRIVEN (Task 1 Part C) 2-4,text,true,,2693,148,5,6,https://jsonplaceholder.typicode.com/posts/100/comments,212,0,0
+1779223679031,733,GET /posts/${postId},404,Not Found,CSV DATA-DRIVEN (Task 1 Part C) 2-5,text,false,,1201,139,1,2,https://jsonplaceholder.typicode.com/posts/999,733,0,488
+1779223679437,562,POST Request,201,Created,Thread Group (Task 1) 1-1,text,true,,1399,241,1,2,https://jsonplaceholder.typicode.com/posts,562,0,0
+1779223679766,672,GET Extracted_id Request,404,Not Found,CSV DATA-DRIVEN (Task 1 Part C) 2-5,text,false,,1208,144,1,2,https://jsonplaceholder.typicode.com/posts//comments,672,0,0
+1779223680002,631,PUT Request,200,OK,Thread Group (Task 1) 1-1,text,true,,1278,254,1,1,https://jsonplaceholder.typicode.com/posts/1,631,0,0
+1779223680634,309,DELETE Request,200,OK,Thread Group (Task 1) 1-1,text,true,,1196,223,1,1,https://jsonplaceholder.typicode.com/posts/1,309,0,0
