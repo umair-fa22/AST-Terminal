@@ -133,7 +133,7 @@ $(document).ready(function() {
         widgets: ['zebra']
     });
 
-    var data = {"OkPercent": 90.0, "KoPercent": 10.0};
+    var data = {"OkPercent": 99.86789960369882, "KoPercent": 0.13210039630118892};
     var dataset = [
         {
             "label" : "FAIL",
@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.7, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.4, 500, 1500, "GET /posts/${postId}"], "isController": false}, {"data": [1.0, 500, 1500, "HTTP Request"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.6139365918097754, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.4, 500, 1500, "GET /posts/${postId}"], "isController": false}, {"data": [0.8, 500, 1500, "GET Extracted_id Request"], "isController": false}, {"data": [1.0, 500, 1500, "PUT Request"], "isController": false}, {"data": [1.0, 500, 1500, "POST Request"], "isController": false}, {"data": [1.0, 500, 1500, "DELETE Request"], "isController": false}, {"data": [0.6132578281145903, 500, 1500, "GET Request"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 10, 1, 10.0, 544.9, 195, 1166, 361.0, 1164.3, 1166.0, 1166.0, 6.839945280437757, 13.005247520519836, 0.9571915612175103], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["GET /posts/${postId}", 5, 1, 20.0, 868.4, 485, 1166, 896.0, 1166.0, 1166.0, 1166.0, 4.0453074433656955, 5.681602700242719, 0.5459584850323624], "isController": false}, {"data": ["HTTP Request", 5, 0, 0.0, 221.4, 195, 237, 222.0, 237.0, 237.0, 237.0, 21.09704641350211, 50.59582674050633, 3.0574235232067513], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 1514, 2, 0.13210039630118892, 661.7886393659181, 149, 12466, 553.5, 938.0, 1261.5, 2264.19999999999, 32.946706417426505, 916.7374052700585, 4.351805445237525], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["GET /posts/${postId}", 5, 1, 20.0, 815.6, 533, 1116, 790.0, 1116.0, 1116.0, 1116.0, 4.00320256204964, 5.627157976381104, 0.5402759707766213], "isController": false}, {"data": ["GET Extracted_id Request", 5, 1, 20.0, 161.2, 149, 183, 159.0, 183.0, 183.0, 183.0, 21.09704641350211, 50.50517536919831, 3.01621835443038], "isController": false}, {"data": ["PUT Request", 1, 0, 0.0, 448.0, 448, 448, 448.0, 448.0, 448.0, 448.0, 2.232142857142857, 2.803257533482143, 0.5536760602678571], "isController": false}, {"data": ["POST Request", 1, 0, 0.0, 259.0, 259, 259, 259.0, 259.0, 259.0, 259.0, 3.8610038610038613, 5.316421332046332, 0.9086932915057915], "isController": false}, {"data": ["DELETE Request", 1, 0, 0.0, 257.0, 257, 257, 257.0, 257.0, 257.0, 257.0, 3.8910505836575875, 4.571224464980545, 0.8473674610894941], "isController": false}, {"data": ["GET Request", 1501, 0, 0.0, 663.6242504996667, 417, 12466, 554.0, 931.9999999999995, 1262.7999999999997, 2278.760000000002, 32.66380867408004, 916.2411228932278, 4.306306341533741], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -217,7 +217,7 @@ $(document).ready(function() {
     }, [[0, 0]], 0, summaryTableHeader);
 
     // Create error table
-    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["404/Not Found", 1, 100.0, 10.0], "isController": false}]}, function(index, item){
+    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["404/Not Found", 2, 100.0, 0.13210039630118892], "isController": false}]}, function(index, item){
         switch(index){
             case 2:
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 10, 1, "404/Not Found", 1, "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": ["GET /posts/${postId}", 5, 1, "404/Not Found", 1, "", "", "", "", "", "", "", ""], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 1514, 2, "404/Not Found", 2, "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": ["GET /posts/${postId}", 5, 1, "404/Not Found", 1, "", "", "", "", "", "", "", ""], "isController": false}, {"data": ["GET Extracted_id Request", 5, 1, "404/Not Found", 1, "", "", "", "", "", "", "", ""], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 
