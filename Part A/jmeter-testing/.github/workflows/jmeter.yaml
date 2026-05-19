@@ -2,9 +2,9 @@ name: JMeter Performance Tests
 
 on:
   push:
-    branches: [ master_123 ] # change to master to run on actual master branch
+    branches: [ main ] # change to master to run on actual master branch
   pull_request:
-    branches: [ master_123 ] # change to master to run on actual master branch
+    branches: [ main ] # change to master to run on actual master branch
 
 jobs:
   jmeter-test:
