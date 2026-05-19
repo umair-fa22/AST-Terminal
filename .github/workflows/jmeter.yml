@@ -2,7 +2,7 @@ name: JMeter Performance Tests
 
 on:
   push:
-    branches: [ master ]
+    branches: [ masteroff ]
 
 jobs:
   performance-test:
